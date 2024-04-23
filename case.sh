@@ -1,7 +1,9 @@
 
 #!/bin/bash    
  
-echo $1        
+echo $1
+echo "This is to validate"
+
 sudo yum install -y $1
         validate $?
 
@@ -19,8 +21,7 @@ status(){
          service $1 status
          validate $?
 }
-
-case $1 in
+icase $1 in
 
         install) install $2;;
         start) start $2;;
