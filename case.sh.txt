@@ -1,0 +1,531 @@
+Last login: Fri Apr 19 20:27:07 on ttys000
+anurupathumma@192-168-1-10 ~ % ls
+Applications											Movies
+Creative Cloud Files Personal Account anurupathumma@gmail.com 757E2C6D5C6387E80A495C7C@AdobeID	Music
+Desktop												Passport copy New.pdf
+Documents											Pictures
+Downloads											Public
+Library
+anurupathumma@192-168-1-10 ~ % cd download
+cd: no such file or directory: download
+anurupathumma@192-168-1-10 ~ % ls -lrth
+total 744
+drwxr-xr-x+  4 anurupathumma  staff   128B 16 Aug  2021 Public
+drwx------+  4 anurupathumma  staff   128B 16 Aug  2021 Pictures
+drwx------+  4 anurupathumma  staff   128B 16 Aug  2021 Music
+drwx------   4 anurupathumma  staff   128B 18 Aug  2021 Movies
+drwx------@  3 anurupathumma  staff    96B 10 Nov  2021 Applications
+-rw-r--r--@  1 anurupathumma  staff   370K 21 Dec 14:22 Passport copy New.pdf
+drwx------@  5 anurupathumma  staff   160B  2 Apr 10:45 Documents
+drwx------   3 anurupathumma  staff    96B  2 Apr 17:52 Creative Cloud Files Personal Account anurupathumma@gmail.com 757E2C6D5C6387E80A495C7C@AdobeID
+drwx------@ 84 anurupathumma  staff   2.6K  3 Apr 20:53 Library
+drwx------+  8 anurupathumma  staff   256B 21 Apr 18:57 Downloads
+drwx------@ 26 anurupathumma  staff   832B 21 Apr 19:03 Desktop
+anurupathumma@192-168-1-10 ~ % ssh -i World.pem ec2-user@13.210.43.215
+Warning: Identity file World.pem not accessible: No such file or directory.
+ec2-user@13.210.43.215: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+anurupathumma@192-168-1-10 ~ % cd downloads
+anurupathumma@192-168-1-10 downloads % ls
+PayslipReport (1).pdf	PayslipReport (2).pdf	PayslipReport.pdf	World.pem
+anurupathumma@192-168-1-10 downloads % ssh -i World.pem ec2-user@13.210.43.215
+Last login: Sun Apr 21 09:00:40 2024 from ec2-13-239-158-4.ap-southeast-2.compute.amazonaws.com
+   ,     #_
+   ~\_  ####_        Amazon Linux 2
+  ~~  \_#####\
+  ~~     \###|       AL2 End of Life is 2025-06-30.
+  ~~       \#/ ___
+   ~~       V~' '->
+    ~~~         /    A newer version of Amazon Linux is available!
+      ~~._.   _/
+         _/ _/       Amazon Linux 2023, GA and supported until 2028-03-15.
+       _/m/'           https://aws.amazon.com/linux/amazon-linux-2023/
+
+4 package(s) needed for security, out of 7 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-25-68 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-25-68 ~]$ touch file1.txt
+[ec2-user@ip-172-31-25-68 ~]$ touch file2.txt
+[ec2-user@ip-172-31-25-68 ~]$ touch file3.txt
+[ec2-user@ip-172-31-25-68 ~]$ ls -lrth
+total 72K
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 09:45 dir1
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr  7 12:02 file5.txt
+-rw-rw-r-- 1 ec2-user ec2-user   55 Apr  7 12:08 file3
+-rw-rw-r-- 1 ec2-user ec2-user 1.8K Apr 10 12:00 1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 10 12:11 cat file 3.txt
+-rw-rw-r-- 1 ec2-user ec2-user  11K Apr 10 12:39 file4.txt
+-rw-rw-r-- 1 ec2-user ec2-user 5.0K Apr 12 11:22 file.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:23 test.log
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:27 vi
+-rwxrwxr-x 1 ec2-user ec2-user   90 Apr 12 11:36 tesh.sh
+-rwxrwxr-x 1 ec2-user ec2-user    0 Apr 12 11:37 test.sh
+-rwxrwxrwx 1 ec2-user ec2-user  202 Apr 14 04:05 Anu.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 04:22 creativesh
+-rwxrwx--- 1 ec2-user ec2-user   86 Apr 14 04:24 creative.sh
+-rwxrwx--- 1 ec2-user ec2-user   84 Apr 14 04:29 Anish.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 05:27 Ranjith.sh
+-rwxrwx--x 1 ec2-user ec2-user  137 Apr 14 06:08 cal.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 06:40 casesh
+-rwxrwx--- 1 ec2-user ec2-user  550 Apr 14 07:44 case.sh
+-rwxrwx--- 1 ec2-user ec2-user  516 Apr 14 08:23 sun.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 08:42 name.sh
+-rwxrwx--- 1 ec2-user ec2-user    0 Apr 21 09:15 file1.txt
+-rwxrwxr-- 1 ec2-user ec2-user 2.0K Apr 21 09:15 file2.txt
+-rw-rw-r-- 1 ec2-user ec2-user 3.8K Apr 21 09:15 file3.txt
+[ec2-user@ip-172-31-25-68 ~]$ useradd -d/home/mummy mummy
+-bash: /usr/sbin/useradd: Permission denied
+[ec2-user@ip-172-31-25-68 ~]$ sudo useradd -d/home/mummy mummy
+[ec2-user@ip-172-31-25-68 ~]$ cdhome
+-bash: cdhome: command not found
+[ec2-user@ip-172-31-25-68 ~]$ cd/home
+-bash: cd/home: No such file or directory
+[ec2-user@ip-172-31-25-68 ~]$ ls -lrth
+total 72K
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 09:45 dir1
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr  7 12:02 file5.txt
+-rw-rw-r-- 1 ec2-user ec2-user   55 Apr  7 12:08 file3
+-rw-rw-r-- 1 ec2-user ec2-user 1.8K Apr 10 12:00 1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 10 12:11 cat file 3.txt
+-rw-rw-r-- 1 ec2-user ec2-user  11K Apr 10 12:39 file4.txt
+-rw-rw-r-- 1 ec2-user ec2-user 5.0K Apr 12 11:22 file.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:23 test.log
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:27 vi
+-rwxrwxr-x 1 ec2-user ec2-user   90 Apr 12 11:36 tesh.sh
+-rwxrwxr-x 1 ec2-user ec2-user    0 Apr 12 11:37 test.sh
+-rwxrwxrwx 1 ec2-user ec2-user  202 Apr 14 04:05 Anu.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 04:22 creativesh
+-rwxrwx--- 1 ec2-user ec2-user   86 Apr 14 04:24 creative.sh
+-rwxrwx--- 1 ec2-user ec2-user   84 Apr 14 04:29 Anish.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 05:27 Ranjith.sh
+-rwxrwx--x 1 ec2-user ec2-user  137 Apr 14 06:08 cal.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 06:40 casesh
+-rwxrwx--- 1 ec2-user ec2-user  550 Apr 14 07:44 case.sh
+-rwxrwx--- 1 ec2-user ec2-user  516 Apr 14 08:23 sun.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 08:42 name.sh
+-rwxrwx--- 1 ec2-user ec2-user    0 Apr 21 09:15 file1.txt
+-rwxrwxr-- 1 ec2-user ec2-user 2.0K Apr 21 09:15 file2.txt
+-rw-rw-r-- 1 ec2-user ec2-user 3.8K Apr 21 09:15 file3.txt
+[ec2-user@ip-172-31-25-68 ~]$ cd/home
+-bash: cd/home: No such file or directory
+[ec2-user@ip-172-31-25-68 ~]$ sudo su -
+Last login: Sun Apr  7 12:14:50 UTC 2024 on pts/1
+[root@ip-172-31-25-68 ~]# cd/home
+-bash: cd/home: No such file or directory
+[root@ip-172-31-25-68 ~]# exit
+logout
+[ec2-user@ip-172-31-25-68 ~]$ cd/home
+-bash: cd/home: No such file or directory
+[ec2-user@ip-172-31-25-68 ~]$ ls -lrth
+total 72K
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 09:45 dir1
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr  7 12:02 file5.txt
+-rw-rw-r-- 1 ec2-user ec2-user   55 Apr  7 12:08 file3
+-rw-rw-r-- 1 ec2-user ec2-user 1.8K Apr 10 12:00 1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 10 12:11 cat file 3.txt
+-rw-rw-r-- 1 ec2-user ec2-user  11K Apr 10 12:39 file4.txt
+-rw-rw-r-- 1 ec2-user ec2-user 5.0K Apr 12 11:22 file.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:23 test.log
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:27 vi
+-rwxrwxr-x 1 ec2-user ec2-user   90 Apr 12 11:36 tesh.sh
+-rwxrwxr-x 1 ec2-user ec2-user    0 Apr 12 11:37 test.sh
+-rwxrwxrwx 1 ec2-user ec2-user  202 Apr 14 04:05 Anu.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 04:22 creativesh
+-rwxrwx--- 1 ec2-user ec2-user   86 Apr 14 04:24 creative.sh
+-rwxrwx--- 1 ec2-user ec2-user   84 Apr 14 04:29 Anish.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 05:27 Ranjith.sh
+-rwxrwx--x 1 ec2-user ec2-user  137 Apr 14 06:08 cal.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 06:40 casesh
+-rwxrwx--- 1 ec2-user ec2-user  550 Apr 14 07:44 case.sh
+-rwxrwx--- 1 ec2-user ec2-user  516 Apr 14 08:23 sun.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 08:42 name.sh
+-rwxrwx--- 1 ec2-user ec2-user    0 Apr 21 09:15 file1.txt
+-rwxrwxr-- 1 ec2-user ec2-user 2.0K Apr 21 09:15 file2.txt
+-rw-rw-r-- 1 ec2-user ec2-user 3.8K Apr 21 09:15 file3.txt
+[ec2-user@ip-172-31-25-68 ~]$ sudo -d/home/baby/baby
+sudo: invalid option -- 'd'
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
+[ec2-user@ip-172-31-25-68 ~]$ sudo -d/home/selina selina
+sudo: invalid option -- 'd'
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
+[ec2-user@ip-172-31-25-68 ~]$ ls -lrth
+total 72K
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 09:45 dir1
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr  7 12:02 file5.txt
+-rw-rw-r-- 1 ec2-user ec2-user   55 Apr  7 12:08 file3
+-rw-rw-r-- 1 ec2-user ec2-user 1.8K Apr 10 12:00 1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 10 12:11 cat file 3.txt
+-rw-rw-r-- 1 ec2-user ec2-user  11K Apr 10 12:39 file4.txt
+-rw-rw-r-- 1 ec2-user ec2-user 5.0K Apr 12 11:22 file.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:23 test.log
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:27 vi
+-rwxrwxr-x 1 ec2-user ec2-user   90 Apr 12 11:36 tesh.sh
+-rwxrwxr-x 1 ec2-user ec2-user    0 Apr 12 11:37 test.sh
+-rwxrwxrwx 1 ec2-user ec2-user  202 Apr 14 04:05 Anu.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 04:22 creativesh
+-rwxrwx--- 1 ec2-user ec2-user   86 Apr 14 04:24 creative.sh
+-rwxrwx--- 1 ec2-user ec2-user   84 Apr 14 04:29 Anish.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 05:27 Ranjith.sh
+-rwxrwx--x 1 ec2-user ec2-user  137 Apr 14 06:08 cal.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 06:40 casesh
+-rwxrwx--- 1 ec2-user ec2-user  550 Apr 14 07:44 case.sh
+-rwxrwx--- 1 ec2-user ec2-user  516 Apr 14 08:23 sun.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 08:42 name.sh
+-rwxrwx--- 1 ec2-user ec2-user    0 Apr 21 09:15 file1.txt
+-rwxrwxr-- 1 ec2-user ec2-user 2.0K Apr 21 09:15 file2.txt
+-rw-rw-r-- 1 ec2-user ec2-user 3.8K Apr 21 09:15 file3.txt
+[ec2-user@ip-172-31-25-68 ~]$ cd/home
+-bash: cd/home: No such file or directory
+[ec2-user@ip-172-31-25-68 ~]$ ls -lrth
+total 72K
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 09:45 dir1
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr  7 12:02 file5.txt
+-rw-rw-r-- 1 ec2-user ec2-user   55 Apr  7 12:08 file3
+-rw-rw-r-- 1 ec2-user ec2-user 1.8K Apr 10 12:00 1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 10 12:11 cat file 3.txt
+-rw-rw-r-- 1 ec2-user ec2-user  11K Apr 10 12:39 file4.txt
+-rw-rw-r-- 1 ec2-user ec2-user 5.0K Apr 12 11:22 file.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:23 test.log
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:27 vi
+-rwxrwxr-x 1 ec2-user ec2-user   90 Apr 12 11:36 tesh.sh
+-rwxrwxr-x 1 ec2-user ec2-user    0 Apr 12 11:37 test.sh
+-rwxrwxrwx 1 ec2-user ec2-user  202 Apr 14 04:05 Anu.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 04:22 creativesh
+-rwxrwx--- 1 ec2-user ec2-user   86 Apr 14 04:24 creative.sh
+-rwxrwx--- 1 ec2-user ec2-user   84 Apr 14 04:29 Anish.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 05:27 Ranjith.sh
+-rwxrwx--x 1 ec2-user ec2-user  137 Apr 14 06:08 cal.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 06:40 casesh
+-rwxrwx--- 1 ec2-user ec2-user  550 Apr 14 07:44 case.sh
+-rwxrwx--- 1 ec2-user ec2-user  516 Apr 14 08:23 sun.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 08:42 name.sh
+-rwxrwx--- 1 ec2-user ec2-user    0 Apr 21 09:15 file1.txt
+-rwxrwxr-- 1 ec2-user ec2-user 2.0K Apr 21 09:15 file2.txt
+-rw-rw-r-- 1 ec2-user ec2-user 3.8K Apr 21 09:15 file3.txt
+[ec2-user@ip-172-31-25-68 ~]$ sudo -d/home/dad dad
+sudo: invalid option -- 'd'
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
+[ec2-user@ip-172-31-25-68 ~]$ sudo useradd -d/home/dad/dad
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+
+[ec2-user@ip-172-31-25-68 ~]$ ls -lrth
+total 72K
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 09:45 dir1
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr  6 11:17 ans-repo1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr  7 12:02 file5.txt
+-rw-rw-r-- 1 ec2-user ec2-user   55 Apr  7 12:08 file3
+-rw-rw-r-- 1 ec2-user ec2-user 1.8K Apr 10 12:00 1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 10 12:11 cat file 3.txt
+-rw-rw-r-- 1 ec2-user ec2-user  11K Apr 10 12:39 file4.txt
+-rw-rw-r-- 1 ec2-user ec2-user 5.0K Apr 12 11:22 file.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:23 test.log
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 12 11:27 vi
+-rwxrwxr-x 1 ec2-user ec2-user   90 Apr 12 11:36 tesh.sh
+-rwxrwxr-x 1 ec2-user ec2-user    0 Apr 12 11:37 test.sh
+-rwxrwxrwx 1 ec2-user ec2-user  202 Apr 14 04:05 Anu.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 04:22 creativesh
+-rwxrwx--- 1 ec2-user ec2-user   86 Apr 14 04:24 creative.sh
+-rwxrwx--- 1 ec2-user ec2-user   84 Apr 14 04:29 Anish.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 05:27 Ranjith.sh
+-rwxrwx--x 1 ec2-user ec2-user  137 Apr 14 06:08 cal.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Apr 14 06:40 casesh
+-rwxrwx--- 1 ec2-user ec2-user  550 Apr 14 07:44 case.sh
+-rwxrwx--- 1 ec2-user ec2-user  516 Apr 14 08:23 sun.sh
+-rwxrwx--- 1 ec2-user ec2-user  154 Apr 14 08:42 name.sh
+-rwxrwx--- 1 ec2-user ec2-user    0 Apr 21 09:15 file1.txt
+-rwxrwxr-- 1 ec2-user ec2-user 2.0K Apr 21 09:15 file2.txt
+-rw-rw-r-- 1 ec2-user ec2-user 3.8K Apr 21 09:15 file3.txt
+[ec2-user@ip-172-31-25-68 ~]$ cd/home
+-bash: cd/home: No such file or directory
+[ec2-user@ip-172-31-25-68 ~]$ sudo cd /home
+[ec2-user@ip-172-31-25-68 ~]$ cd /home
+[ec2-user@ip-172-31-25-68 home]$ sudo su-
+sudo: su-: command not found
+[ec2-user@ip-172-31-25-68 home]$ sudo su -
+Last login: Sun Apr 21 09:20:14 UTC 2024 on pts/1
+[root@ip-172-31-25-68 ~]# useradd -d/home/dad/dad
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+
+[root@ip-172-31-25-68 ~]# ls -lrth
+total 0
+-rw-r--r-- 1 root root 0 Apr  7 12:01 file.txt
+[root@ip-172-31-25-68 ~]# chmod 400 file.txt
+[root@ip-172-31-25-68 ~]# exit
+logout
+[ec2-user@ip-172-31-25-68 home]$ sudo useradd -d/home/dad dad
+[ec2-user@ip-172-31-25-68 home]$ ls -lrth
+total 4.0K
+drwx------ 2 Anish    Anish      83 Apr  6 10:34 Anish
+drwx------ 2 Cathy    Cathy      83 Apr  6 10:39 Cathy
+drwx------ 3 Anu      Anu        93 Apr  6 11:22 Anu
+drwx------ 2 Virat    Virat      62 Apr  6 11:26 Virat
+drwx------ 2 Kranthi  Kranthi    83 Apr  7 12:11 Kranthi
+drwx------ 6 ec2-user ec2-user 4.0K Apr 14 08:42 ec2-user
+drwx------ 2 mummy    mummy      62 Apr 21 09:19 mummy
+drwx------ 2 dad      dad        62 Apr 21 09:25 dad
+[ec2-user@ip-172-31-25-68 home]$ sudo usermod -G preet dad
+usermod: group 'preet' does not exist
+[ec2-user@ip-172-31-25-68 home]$ sudo groupadd preet
+[ec2-user@ip-172-31-25-68 home]$ -s -lrth
+-bash: -s: command not found
+[ec2-user@ip-172-31-25-68 home]$ ls -lrth
+total 4.0K
+drwx------ 2 Anish    Anish      83 Apr  6 10:34 Anish
+drwx------ 2 Cathy    Cathy      83 Apr  6 10:39 Cathy
+drwx------ 3 Anu      Anu        93 Apr  6 11:22 Anu
+drwx------ 2 Virat    Virat      62 Apr  6 11:26 Virat
+drwx------ 2 Kranthi  Kranthi    83 Apr  7 12:11 Kranthi
+drwx------ 6 ec2-user ec2-user 4.0K Apr 14 08:42 ec2-user
+drwx------ 2 mummy    mummy      62 Apr 21 09:19 mummy
+drwx------ 2 dad      dad        62 Apr 21 09:25 dad
+[ec2-user@ip-172-31-25-68 home]$ sudo usermod -G preet dad
+[ec2-user@ip-172-31-25-68 home]$ cat
+exit
+exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^C
+[ec2-user@ip-172-31-25-68 home]$ cat dad
+cat: dad: Permission denied
+[ec2-user@ip-172-31-25-68 home]$ sudo cat dad
+cat: dad: Is a directory
+[ec2-user@ip-172-31-25-68 home]$ cat dad
+cat: dad: Permission denied
+[ec2-user@ip-172-31-25-68 home]$ cat dad.txt
+cat: dad.txt: No such file or directory
+[ec2-user@ip-172-31-25-68 home]$ cat file.txt
+cat: file.txt: No such file or directory
+[ec2-user@ip-172-31-25-68 home]$ groups
+ec2-user adm systemd-journal
+[ec2-user@ip-172-31-25-68 home]$ cd/home
+-bash: cd/home: No such file or directory
+[ec2-user@ip-172-31-25-68 home]$ ls -lrth
+total 4.0K
+drwx------ 2 Anish    Anish      83 Apr  6 10:34 Anish
+drwx------ 2 Cathy    Cathy      83 Apr  6 10:39 Cathy
+drwx------ 3 Anu      Anu        93 Apr  6 11:22 Anu
+drwx------ 2 Virat    Virat      62 Apr  6 11:26 Virat
+drwx------ 2 Kranthi  Kranthi    83 Apr  7 12:11 Kranthi
+drwx------ 6 ec2-user ec2-user 4.0K Apr 14 08:42 ec2-user
+drwx------ 2 mummy    mummy      62 Apr 21 09:19 mummy
+drwx------ 2 dad      dad        62 Apr 21 09:25 dad
+[ec2-user@ip-172-31-25-68 home]$ groups
+ec2-user adm systemd-journal
+[ec2-user@ip-172-31-25-68 home]$ sudo su - dad
+[dad@ip-172-31-25-68 ~]$ groups
+dad preet
+[dad@ip-172-31-25-68 ~]$ client_loop: send disconnect: Broken pipe
+anurupathumma@192-168-1-10 downloads % ls
+PayslipReport (1).pdf	PayslipReport (2).pdf	PayslipReport.pdf	World.pem
+anurupathumma@192-168-1-10 downloads % cd downloads
+cd: no such file or directory: downloads
+anurupathumma@192-168-1-10 downloads % ls
+PayslipReport (1).pdf	PayslipReport (2).pdf	PayslipReport.pdf	World.pem
+anurupathumma@192-168-1-10 downloads % ssh -i World.pem ec2-user@13.210.43.215
+Last login: Tue Apr 23 10:55:42 2024 from ec2-13-239-158-4.ap-southeast-2.compute.amazonaws.com
+   ,     #_
+   ~\_  ####_        Amazon Linux 2
+  ~~  \_#####\
+  ~~     \###|       AL2 End of Life is 2025-06-30.
+  ~~       \#/ ___
+   ~~       V~' '->
+    ~~~         /    A newer version of Amazon Linux is available!
+      ~~._.   _/
+         _/ _/       Amazon Linux 2023, GA and supported until 2028-03-15.
+       _/m/'           https://aws.amazon.com/linux/amazon-linux-2023/
+
+4 package(s) needed for security, out of 7 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-25-68 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-25-68 ~]$ ls
+1         ans-repo   Anu.sh  casesh   cat file 3.txt  creative.sh  file1.txt  file3      file4.txt  file.txt  Ranjith.sh  tesh.sh   test.sh
+Anish.sh  ans-repo1  cal.sh  case.sh  creativesh      dir1         file2.txt  file3.txt  file5.txt  name.sh   sun.sh      test.log  vi
+[ec2-user@ip-172-31-25-68 ~]$ vi case.sh
+[ec2-user@ip-172-31-25-68 ~]$ vi case.sh
+[ec2-user@ip-172-31-25-68 ~]$ vi case.sh
+
+#!/bin/bash
+validate(){
+val=$1
+
+      if [ $val==0 ]
+      then
+              echo "executed successfully"
+
+             else
+
+              echo "failed"
+      fi
+
+ }
+
+install(){
+        echo $1
+        sudo yum install -y $1
+        validate $?
+}
+
+start(){
+        sudo service $1 start
+        validate $?
+}
+
+stop(){
+        sudo service $1 stop
+        validate $?
+}
+
+status(){
+         service $1 status
+         validate $?
+}
+
+case $1 in
+
+        install) install $2;;
+        start) start $2;;
+        stop) stop $2;;
+        status) status $2;;
+        *)echo "pass a valid value";;
+esac
+
+#/case.sh  status docker
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+"case.sh" 46L, 550B                                                                                                                                                                       1,10          All
